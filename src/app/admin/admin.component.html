@@ -1,0 +1,30 @@
+
+
+<form class="logForm" role="form" [formGroup]="adminForm">
+  <div class="alert alert-danger" style="display: none;">
+
+  </div>
+ <div class="form-group">
+    <label for="series">series:</label>
+    <input type="text" class="form-control" formControlName='series'>
+  </div>
+   <div class="form-group">
+    <label for="year">yeare:</label>
+    <input type="text" class="form-control"  formControlName='year'>
+  </div>
+  
+  <button (click)="addCar()" class="button">Add Car</button>
+</form>
+
+<form class="loglogForm" role="form" [formGroup]="adminForm">
+  <div class="alert alert-danger" style="display: none;">
+
+  </div>
+ <div class="form-group">
+    <label for="id">ID:</label>
+    <input type="number" class="form-control" formControlName='id'>
+  </div>
+   
+  
+  <button (click)="deleteCar()" class="button">Delete Car</button>
+</form>
